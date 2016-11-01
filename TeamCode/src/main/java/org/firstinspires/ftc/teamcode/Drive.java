@@ -32,15 +32,11 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.VoltageSensor;
-import com.qualcomm.robotcore.util.ElapsedTime;
+
 import java.lang.Math;
-import org.firstinspires.ftc.robotcore.external.Func;
+
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import com.qualcomm.robotcore.hardware.*;
 
@@ -62,6 +58,8 @@ public class Drive extends OpMode{
     DcMotor combine;
     DcMotor left2;
     DcMotor right2;
+    boolean triggerCombine = false;
+
 
     //Values used to calculate power
     double topLeft, topRight, bottomLeft, bottomRight, maxVector;
@@ -101,10 +99,30 @@ public class Drive extends OpMode{
         left2.setPower(topRight/maxVector);
         right1.setPower(bottomLeft/maxVector);
         right2.setPower(bottomRight/maxVector);
+
+        //Combine: Either a linear control or a trigger control
+        //!!!!!!!!Linear: Implement when controller2 is functional!!!!!!!!
+        //combine.setPower(gamepad2.left_stick.y);
+
+        //Trigger
+        if (gamepad1.a) triggerCombine();
     }
-    public static void motorTriggerBoolean (DcMotor combineMotor, boolean triggerBool)
+
+    private boolean _triggerCombine;
+    public void triggerCombine ()
     {
-
-
+        if (!_triggerCombine)
+        {
+            combine.setPower(1);
+            _triggerCombine = true;
+        }
+        else if (_triggerCombine)
+        {
+            combine.setPower(0);
+            _triggerCombine = false;
+        }
     }
+
+
+
 }

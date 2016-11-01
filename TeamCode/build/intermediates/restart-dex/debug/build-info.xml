@@ -4,22 +4,22 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="5552379313160"
+    timestamp="4209865014805"
     token="5587961458087486682"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="53" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="7" />
+        duration="92" />
     <task
         name="verifier"
-        duration="1" />
+        duration="41" />
 
     <artifact
         location="/home/union/Documents/ftc_app-master/TeamCode/build/outputs/apk/TeamCode-debug.apk"
