@@ -5,6 +5,8 @@ import android.support.annotation.ColorRes;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DeviceInterfaceModule;
+import com.qualcomm.robotcore.hardware.DigitalChannelController;
 import com.qualcomm.robotcore.hardware.UltrasonicSensor;
 
 /**
@@ -23,8 +25,8 @@ public abstract class OpModeBase extends OpMode {
     public static ColorSensor colorMid;
     public static ColorSensor colorFront;
     public static ColorSensor colorBeacon;
-    public static UltrasonicSensor usLeft;
-    public static UltrasonicSensor usRight;
+  //  public static UltrasonicSensor usLeft;
+ //   public static UltrasonicSensor usRight;
 
     public void init()
     {
@@ -43,8 +45,8 @@ public abstract class OpModeBase extends OpMode {
         colorBeacon = hardwareMap.colorSensor.get("colorBeacon");
 
         //Ultrasonic Sensors
-        usLeft = hardwareMap.ultrasonicSensor.get("usLeft");
-        usRight = hardwareMap.ultrasonicSensor.get("usRight");
+      //    usLeft = hardwareMap.ultrasonicSensor.get("usLeft");
+      //    usRight = hardwareMap.ultrasonicSensor.get("usRight");
 
 
     }
@@ -57,10 +59,10 @@ public abstract class OpModeBase extends OpMode {
     public static void move(double leftX, double leftY, double rightX){
         //Each joystick alone gives the wheel a unique set of instructions
         //These equations add them all together
-        _topLeft = leftX+leftY+rightX;
-        _topRight = -leftX+leftY+rightX;
-        _bottomLeft = leftX-leftY+rightX;
-        _bottomRight = -leftX-leftY+rightX;
+        _topLeft = -leftX-leftY-rightX;
+        _topRight = leftX-leftY-rightX;
+        _bottomLeft = -leftX+leftY-rightX;
+        _bottomRight = leftX+leftY-rightX;
 
         //Find the largest absolute value
         _maxVector = Math.max(Math.max(Math.abs(_topLeft), Math.abs(_topRight)),
@@ -79,6 +81,13 @@ public abstract class OpModeBase extends OpMode {
     }
     public static void turn(double turnSpeed){
         move(0,0,turnSpeed);
+    }
+
+    public static void driveAngle(float angle, float power)
+    {
+        float b = (float) Math.sin(90-angle);
+        float a = (float) (Math.pow(power,2) - Math.pow(b,2));
+        move(a, b, 0);
     }
 
     public static void resetEncoders(boolean useEncoders)

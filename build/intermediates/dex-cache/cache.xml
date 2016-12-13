@@ -3,129 +3,129 @@
 
     <item
         is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/Blocks-release/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c5216545889f13d4560613d35d498b2ca2db1d1f">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-Blocks-release_b1615dfd43a6ee10524aa565b6d333d5b869350f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/libs/Vuforia.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ca5be875a082e7b5f0277a0e85564617b181ae76">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/Vuforia_71d922ff2787bb8f247563a29f753623542ca8cc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/Analytics-release/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-Analytics-release_c6d062e1a969ac943d6714d0e0bacc03f078626e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="2a24cdb4bd53ff8f890698775608b84ab6703fe2">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-RobotCore-release_ed4e9dd1c802596086203e93bd2e527584109348.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/Inspection-release/jars/classes.jar"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/Inspection-release/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="b1a3a00c0ec6312741914629ed283101a3301293">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-Inspection-release_b9bb82d7103a7ffff72aeea432dba29026a6abc5.jar" />
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-Inspection-release_4b36ae38f094e280549931083f3bc7460357894e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="6d13b87267359197a1fc3113966a64f635e2720e">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/instant-run_c24f46830260cb172b7a8cbc0bd2a3635ef55b46.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/ModernRobotics-release/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="01999c87afe3d10ffa06f3efa66f39e61e6aba0c">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-ModernRobotics-release_75e0e5589c68f82760407287388bd05f636ffcb8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/libs/gson-2.7.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="f8bcd8ef93636064d155d8e8ea6541ea7e4280d0">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/gson-2.7_2c51c682fa80dcc3b3df27450e059985f8c43a01.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/FtcCommon-release/jars/classes.jar"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/FtcCommon-release/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="ec068454985de756c760317d9c63c23b3ce2055c">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-FtcCommon-release_8f1339b44e8d84023f9d11f3384eaa4717066b01.jar" />
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-FtcCommon-release_1fada26d944fe601b131e2b092e31f1ec6db8bce.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/WirelessP2p-release/jars/classes.jar"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/Analytics-release/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-WirelessP2p-release_2c4e5df74639bfdd14591d716af697d2ed334c70.jar" />
+        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-Analytics-release_76399459c0d00d9a8d1c7bb47c19f8093fc3d319.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/libs/support-annotations-23.4.0.jar"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="15632afee8c14c7c0ba7168d25710c38badee7c8">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_3265922639484cd06aa3c498a1314fb60a47d8e0.jar" />
+        sha1="815f72f80dd9a17f9be590e88b76b4e2836cc00d">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/instant-run-bootstrap_69dab997d317c9a1b67502c1f24475e17a133a0a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/libs/d2xx.jar"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="a6cc281519866bbb2d0ac480409212d8d9816d18">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/d2xx_50b88866d00eedaec4cd2e12af0e57e99c756743.jar" />
+        sha1="2a24cdb4bd53ff8f890698775608b84ab6703fe2">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-RobotCore-release_54e3b8a34b818859f6406a928a93c0f3b382ae06.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="17dc7e709a4208e1ab1d1eb8995aef33e9053db6">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/instant-run-bootstrap_2afad56ab151e78e3fc40793d1eb3874ded04316.jar" />
+        sha1="4a4f10b1f7126ec09a079632574c8840da0e3ac2">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/instant-run_21c42032d3ced498fe738ef659ce718fe940e924.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/exploded-aar/Hardware-release/jars/classes.jar"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/libs/Vuforia.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ca5be875a082e7b5f0277a0e85564617b181ae76">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/Vuforia_bef91d044811ea247a5fd8fbc73d518568777205.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/Hardware-release/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="4d964a43f48520428edfadad534fa0a3279deb84">
-        <dex dex="/home/union/Documents/ftc_app-master/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-Hardware-release_d4a20d832d3984359130e69e8dfc1824b87b088b.jar" />
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-Hardware-release_8af21b9e9d06b3019ffa15dd1a4b6f3166d9c78f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/WirelessP2p-release/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-WirelessP2p-release_d82e5fdfef9398b1427821bbbd1a8e42632bccb9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/Blocks-release/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c5216545889f13d4560613d35d498b2ca2db1d1f">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-Blocks-release_8f8770607363d70e6a995abfd3ee7c6451f69b6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/ModernRobotics-release/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="01999c87afe3d10ffa06f3efa66f39e61e6aba0c">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-ModernRobotics-release_f22b2eeab1501065acf708d4268a8f03a7b43f7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/libs/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="15632afee8c14c7c0ba7168d25710c38badee7c8">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_f04a123d4a84847e298ade4c988788aa6573bdb3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/libs/d2xx.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a6cc281519866bbb2d0ac480409212d8d9816d18">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/d2xx_be56f4988645f72efe1d96538d8f33b43ae1b8d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/union/Documents/ftc/TeamCode/build/intermediates/exploded-aar/RobotCore-release/jars/libs/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f8bcd8ef93636064d155d8e8ea6541ea7e4280d0">
+        <dex dex="/home/union/Documents/ftc/TeamCode/build/intermediates/pre-dexed/debug/gson-2.7_7996984336b20d000dd774f1bf7193e745537f9c.jar" />
     </item>
 
 </items>

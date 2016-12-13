@@ -32,97 +32,50 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import java.lang.Math;
 
-import org.firstinspires.ftc.robotcore.external.Telemetry;
-import com.qualcomm.robotcore.hardware.*;
+import ftc.backcode.OpModeBase;
 
-/**
- * {@link Drive} illustrates various ways in which telemetry can be
- * transmitted from the robot controller to the driver station. The sample illustrates
- * numeric and text data, formatted output, and optimized evaluation of expensive-to-acquire
- * information. The telemetry {@link Telemetry#log() log} is illustrated by scrolling a poem
- * to the driver station.
- *
- * @see Telemetry
- */
+
 @TeleOp(name = "simpleDrive",group = "UserOP")
-public class Drive extends OpMode{
-
-    //Initializes motors
-    DcMotor left1;
-    DcMotor right1;
-    DcMotor combine;
-    DcMotor left2;
-    DcMotor right2;
-    boolean triggerCombine = false;
-
+public class Drive extends OpModeBase {
 
     //Values used to calculate power
-    double topLeft, topRight, bottomLeft, bottomRight, maxVector;
 
-    public void init()
-    {
-        //matching our variables to the hardware
-        right1 = hardwareMap.dcMotor.get("rightFront");
-        left1 = hardwareMap.dcMotor.get("leftFront");
-        right2 = hardwareMap.dcMotor.get("rightBack");
-        left2 = hardwareMap.dcMotor.get("leftBack");
-        combine = hardwareMap.dcMotor.get("combine");
-    }
-    
 
+    public void start() {}
+
+    private boolean _lastAButton = false;
 
     public void loop()
     {
-        //Each joystick alone gives the wheel a unique set of instructions
-        //These equations add them all together
-        topLeft = gamepad1.left_stick_x+gamepad1.left_stick_y+gamepad1.right_stick_x;
-        topRight = -gamepad1.left_stick_x+gamepad1.left_stick_y+gamepad1.right_stick_x;
-        bottomLeft = gamepad1.left_stick_x-gamepad1.left_stick_y+gamepad1.right_stick_x;
-        bottomRight = -gamepad1.left_stick_x-gamepad1.left_stick_y+gamepad1.right_stick_x;
-
-        //Find the largest absolute value
-        maxVector = Math.max(Math.max(Math.abs(topLeft), Math.abs(topRight)),
-                Math.max(Math.abs(bottomLeft), Math.abs(bottomRight)));
-
-
-        //If the vector is being divided is less than 1, set it to just 1. Allow for micromanagement
-        //Also makes sure we don't divide by zero
-        maxVector = maxVector > 1 ? maxVector : 1;
-
-        //Set power to values divided by the largest so numbers are in range and proportional
-        left1.setPower(topLeft/maxVector);
-        left2.setPower(topRight/maxVector);
-        right1.setPower(bottomLeft/maxVector);
-        right2.setPower(bottomRight/maxVector);
-
         //Combine: Either a linear control or a trigger control
         //!!!!!!!!Linear: Implement when controller2 is functional!!!!!!!!
         //combine.setPower(gamepad2.left_stick.y);
+        
+        //Name of the function says it all
+
+        move(-gamepad1.left_stick_x, -gamepad1.left_stick_y, -gamepad1.right_stick_x);
 
         //Trigger
-        if (gamepad1.a) triggerCombine();
+        if (gamepad2.a & !_lastAButton) { triggerCombine(); }
+        if (gamepad2.a) { _lastAButton = true; }
+        else { _lastAButton = false; }
+
+     //   if (gamepad2.b) { catapult.setPower(1); }
+     //   else { catapult.setPower(0.0); }
+
+        catapult.setPower(gamepad2.left_stick_y);
+
+
     }
 
     private boolean _triggerCombine;
     public void triggerCombine ()
     {
-        if (!_triggerCombine)
-        {
-            combine.setPower(1);
-            _triggerCombine = true;
-        }
-        else if (_triggerCombine)
-        {
-            combine.setPower(0);
-            _triggerCombine = false;
-        }
+        if (!_triggerCombine) { combine.setPower(1); _triggerCombine = true; }
+        else if (_triggerCombine) { combine.setPower(0); _triggerCombine = false; }
     }
-
-
-
 }
