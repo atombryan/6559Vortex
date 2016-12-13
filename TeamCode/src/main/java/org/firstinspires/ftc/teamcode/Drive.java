@@ -51,31 +51,20 @@ public class Drive extends OpModeBase {
 
     public void loop()
     {
-        //Combine: Either a linear control or a trigger control
-        //!!!!!!!!Linear: Implement when controller2 is functional!!!!!!!!
-        //combine.setPower(gamepad2.left_stick.y);
-        
-        //Name of the function says it all
-
-        move(-gamepad1.left_stick_x, -gamepad1.left_stick_y, -gamepad1.right_stick_x);
-
+        move(-gamepad1.left_stick_x, -gamepad1.left_stick_y, -gamepad1.right_stick_x,negated);
         //Trigger
         if (gamepad2.a & !_lastAButton) { triggerCombine(); }
         if (gamepad2.a) { _lastAButton = true; }
         else { _lastAButton = false; }
-
-     //   if (gamepad2.b) { catapult.setPower(1); }
-     //   else { catapult.setPower(0.0); }
-
         catapult.setPower(gamepad2.left_stick_y);
 
 
     }
 
-    private boolean _triggerCombine;
+    private boolean negated;
     public void triggerCombine ()
     {
-        if (!_triggerCombine) { combine.setPower(1); _triggerCombine = true; }
-        else if (_triggerCombine) { combine.setPower(0); _triggerCombine = false; }
+        if (!negated) { negated = true; }
+        else if (negated) { negated = false; }
     }
 }

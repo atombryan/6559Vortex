@@ -56,13 +56,22 @@ public abstract class OpModeBase extends OpMode {
 
     private static double _topLeft, _topRight, _bottomLeft, _bottomRight, _maxVector;
 
-    public static void move(double leftX, double leftY, double rightX){
+    public static void move(double leftX, double leftY, double rightX, boolean negated){
         //Each joystick alone gives the wheel a unique set of instructions
         //These equations add them all together
-        _topLeft = -leftX-leftY-rightX;
-        _topRight = leftX-leftY-rightX;
-        _bottomLeft = -leftX+leftY-rightX;
-        _bottomRight = leftX+leftY-rightX;
+        if (negated) {
+            _topLeft = -leftX - leftY - rightX;
+            _topRight = leftX - leftY - rightX;
+            _bottomLeft = -leftX + leftY - rightX;
+            _bottomRight = leftX + leftY - rightX;
+        }
+        else
+        {
+            _topLeft = -(-leftX - leftY - rightX);
+            _topRight = -(leftX - leftY - rightX);
+            _bottomLeft = -(-leftX + leftY - rightX);
+            _bottomRight = -(leftX + leftY - rightX);
+        }
 
         //Find the largest absolute value
         _maxVector = Math.max(Math.max(Math.abs(_topLeft), Math.abs(_topRight)),
@@ -80,14 +89,14 @@ public abstract class OpModeBase extends OpMode {
 
     }
     public static void turn(double turnSpeed){
-        move(0,0,turnSpeed);
+        move(0,0,turnSpeed,false);
     }
 
     public static void driveAngle(float angle, float power)
     {
         float b = (float) Math.sin(90-angle);
         float a = (float) (Math.pow(power,2) - Math.pow(b,2));
-        move(a, b, 0);
+        move(a, b, 0,false);
     }
 
     public static void resetEncoders(boolean useEncoders)

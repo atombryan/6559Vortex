@@ -53,26 +53,26 @@ public class LightOnlyAutonomous extends OpModeBase {
         while (true)
         {
             if (rgb0 < 150) OpModeBase.turn(-1);
-            else OpModeBase.move(0,1,0);
+            else OpModeBase.move(0,1,0,false);
             if (rgb3 > 100) break;
         }
         press(rgb3Blue, rgb3Red, rgb3);
         while (rgb1 > 150)
         {
-            move (-1,0,0);
+            move (-1,0,0,false);
         }
         while (rgb1 < 150)
         {
-            move (1,0,0);
+            move (1,0,0,false);
         }
         while (true)
         {
             if (rgb0 < 150) OpModeBase.turn(-1);
-            else OpModeBase.move(0,1,0);
+            else OpModeBase.move(0,1,0,false);
             if (rgb3 > 100) break;
         }
         press(rgb3Blue, rgb3Red, rgb3);
-        
+
         while(right1.getCurrentPosition() < givenPos)
         {
             driveAngle(angle2,1);
